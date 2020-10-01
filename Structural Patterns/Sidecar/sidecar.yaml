@@ -4,7 +4,7 @@ metadata:
   name: sidecar
 spec:
   containers:
-  - name: mainContainer
+  - name: main-container
     image: busybox
     args:
     - /bin/sh
@@ -20,7 +20,7 @@ spec:
     volumeMounts:
     - name: sharedlog
       mountPath: /var/log
-  - name: sidecarContainer
+  - name: sidecar-container
     image: busybox
     args: [/bin/sh, -c, 'tail -f /var/log/file.log']
     volumeMounts:
