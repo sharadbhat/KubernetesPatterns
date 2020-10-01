@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sidecar
+spec:
+  containers:
+  - name: mainContainer
+    image: busybox
+    args:
+    - /bin/sh
+    - -c
+    - >
+      i=0;
+      while true;
+      do
+        echo "Logging line: $i" >> /var/log/file.log;
+        i=$((i+1));
+        sleep 1;
+      done
+    volumeMounts:
+    - name: sharedlog
+      mountPath: /var/log
+  - name: sidecarContainer
+    image: busybox
+    args: [/bin/sh, -c, 'tail -f /var/log/file.log']
+    volumeMounts:
+    - name: sharedlog
+      mountPath: /var/log
+  volumes:
+  - name: sharedlog
+    emptyDir: {}
