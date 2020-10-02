@@ -4,8 +4,8 @@ metadata:
   name: periodic-job
 spec:
   schedule: "*/1 * * * *"
-  successfulJobHistoryLimit: 3
-  failedJobHistoryLimit: 3
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
   startingDeadlingSeconds: 60
   concurrencyPolicy: Forbid
   jobTemplate:
