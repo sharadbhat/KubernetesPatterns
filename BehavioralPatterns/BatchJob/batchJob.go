@@ -28,6 +28,7 @@ func GenerateBatchJobSpec() {
 							},
 						},
 					},
+					RestartPolicy: "Never",
 				},
 			},
 		},
