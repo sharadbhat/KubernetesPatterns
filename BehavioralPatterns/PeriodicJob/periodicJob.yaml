@@ -19,3 +19,4 @@ spec:
             - /bin/sh
             - -c
             - echo "Executed at $(date)"
+          restartPolicy: "Never"

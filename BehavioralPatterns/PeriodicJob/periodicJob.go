@@ -42,6 +42,7 @@ func GeneratePeriodicJobSpec() {
 									},
 								},
 							},
+							RestartPolicy: "Never",
 						},
 					},
 				},
