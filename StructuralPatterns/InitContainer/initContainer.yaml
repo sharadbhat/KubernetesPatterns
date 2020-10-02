@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: init-pod
+spec:
+  containers:
+  - name: main-container
+    image: busybox
+    args:
+      - /bin/sh
+      - -c
+      - ls /var/log
+    volumeMounts:
+    - name: sharedlog
+      mountPath: /var/log
+  initContainers:
+  - name: init-container
+    image: busybox
+    args:
+      - /bin/sh
+      - -c
+      - touch /var/log/file.txt
+    volumeMounts:
+    - name: sharedlog
+      mountPath: /var/log
+  volumes:
+  - name: sharedlog
+    emptyDir: {}
