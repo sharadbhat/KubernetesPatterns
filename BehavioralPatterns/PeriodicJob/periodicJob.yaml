@@ -1,0 +1,21 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: periodic-job
+spec:
+  schedule: "*/1 * * * *"
+  successfulJobHistoryLimit: 3
+  failedJobHistoryLimit: 3
+  startingDeadlingSeconds: 60
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: periodic-container
+            image: busybox
+            args:
+            - /bin/sh
+            - -c
+            - echo "Executed at $(date)"
