@@ -5,3 +5,10 @@ Enables separation of concerns by providing a separate lifecycle for initializat
 ## Problem
 
 Main application containers might have certain prerequisites before starting up such database schema setup, seed data installation.
+
+## Solution
+
+| Languages |
+|:-:|
+| [YAML](./initContainer.yaml) |
+| [Golang](./initContainer.go) |
