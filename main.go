@@ -6,6 +6,7 @@ import (
 	periodicjob "github.com/sharadbhat/KubernetesPatterns/BehavioralPatterns/PeriodicJob"
 
 	// Structural Patterns
+	initcontainer "github.com/sharadbhat/KubernetesPatterns/StructuralPatterns/InitContainer"
 	sidecar "github.com/sharadbhat/KubernetesPatterns/StructuralPatterns/Sidecar"
 )
 
@@ -15,5 +16,6 @@ func main() {
 	periodicjob.GeneratePeriodicJobSpec()
 
 	// Structural Patterns
+	initcontainer.GenerateInitContainerSpec()
 	sidecar.GenerateSidecarSpec()
 }
