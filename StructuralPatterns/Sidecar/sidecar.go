@@ -14,7 +14,6 @@ func GenerateSidecarSpec() {
 				Name: "sharedlog",
 			},
 		},
-		HostNetwork: true,
 		Containers: []corev1.Container{
 			{
 				Name:  "main-container",

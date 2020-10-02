@@ -31,7 +31,6 @@ func GeneratePeriodicJobSpec() {
 				Spec: batchv1.JobSpec{
 					Template: corev1.PodTemplateSpec{
 						Spec: corev1.PodSpec{
-							HostNetwork: true,
 							Containers: []corev1.Container{
 								{
 									Name:  "periodic-container",
