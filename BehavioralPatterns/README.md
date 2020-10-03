@@ -8,3 +8,4 @@ Patterns focused on communication mechanisms and interactions between Pods and t
 |:-:|
 | [Batch Job](./BatchJob/README.md) |
 | [Periodic Job](./PeriodicJob/README.md) |
+| [Daemon Service](./DaemonService/README.md) |
