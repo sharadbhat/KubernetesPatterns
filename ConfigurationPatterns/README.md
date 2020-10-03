@@ -1,5 +1,7 @@
 # Configuration Patterns
 
+Patterns focused on customizing and adapting applications with external configurations.
+
 ## Types
 
 | Patterns |
