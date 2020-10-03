@@ -22,7 +22,7 @@ func GenerateEnvVarConfigurationSpec() {
 				Args: []string{
 					"/bin/sh",
 					"-c",
-					"Value 1: $VALUE_1",
+					"Value 1 -> $VALUE_1",
 				},
 			},
 		},
