@@ -4,7 +4,7 @@ metadata:
   name: health-probe
 spec:
   containers:
-  - name: live-container
+  - name: ready-container
     image: busybox
     args:
     - /bin/sh

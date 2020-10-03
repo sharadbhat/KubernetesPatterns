@@ -11,7 +11,7 @@ func GenerateReadinessProbeSpec() {
 	pod := corev1.PodSpec{
 		Containers: []corev1.Container{
 			{
-				Name:  "live-container",
+				Name:  "ready-container",
 				Image: "busybox",
 				Args: []string{
 					"/bin/sh",
