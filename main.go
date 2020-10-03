@@ -22,6 +22,7 @@ func main() {
 	// Foundational Patterns
 	managedlifecycle.GenerateManagedLifecycleSpec()
 	healthprobe.GenerateLivenessProbeSpec()
+	healthprobe.GenerateReadinessProbeSpec()
 
 	// Behavioral Patterns
 	batchjob.GenerateBatchJobSpec()
