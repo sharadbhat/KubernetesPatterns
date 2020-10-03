@@ -4,6 +4,7 @@
 
 | Patterns |
 |:-:|
+| [Foundational Patterns](./FoundationalPatterns/README.md) |
 | [Behavioral Patterns](./BehavioralPatterns/README.md) |
 | [Structural Patterns](./StructuralPatterns/README.md) |
 | [Configuration Patterns](./ConfigurationPatterns/README.md) |

@@ -21,10 +21,10 @@ spec:
           command:
           - /bin/sh
           - -c
-          - touch /var/log/file.txt
+          - touch /var/file.txt
       preStop:
         exec:
           command:
           - /bin/sh
           - -c
-          - rm /var/log/file.txt
+          - rm /var/file.txt
