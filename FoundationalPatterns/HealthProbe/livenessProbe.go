@@ -11,7 +11,7 @@ func GenerateLivenessProbeSpec() {
 	pod := corev1.PodSpec{
 		Containers: []corev1.Container{
 			{
-				Name:  "",
+				Name:  "live-container",
 				Image: "busybox",
 				Args: []string{
 					"/bin/sh",
