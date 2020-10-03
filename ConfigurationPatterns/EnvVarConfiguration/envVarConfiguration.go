@@ -26,7 +26,6 @@ func GenerateEnvVarConfigurationSpec() {
 				},
 			},
 		},
-		RestartPolicy: "Never",
 	}
 
 	fmt.Printf("%+v", pod)

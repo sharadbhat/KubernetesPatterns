@@ -52,7 +52,6 @@ func GenerateSidecarSpec() {
 				},
 			},
 		},
-		RestartPolicy: "Never",
 	}
 
 	fmt.Printf("%+v", pod)

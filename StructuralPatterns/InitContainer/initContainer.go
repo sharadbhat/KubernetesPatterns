@@ -46,7 +46,6 @@ func GenerateInitContainerSpec() {
 				},
 			},
 		},
-		RestartPolicy: "Never",
 	}
 
 	fmt.Printf("%+v", pod)
