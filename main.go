@@ -3,6 +3,7 @@ package main
 import (
 	// Behavioral Patterns
 	batchjob "github.com/sharadbhat/KubernetesPatterns/BehavioralPatterns/BatchJob"
+	daemonservice "github.com/sharadbhat/KubernetesPatterns/BehavioralPatterns/DaemonService"
 	periodicjob "github.com/sharadbhat/KubernetesPatterns/BehavioralPatterns/PeriodicJob"
 
 	// Configuration Patterns
@@ -17,6 +18,7 @@ func main() {
 	// Behavioral Patterns
 	batchjob.GenerateBatchJobSpec()
 	periodicjob.GeneratePeriodicJobSpec()
+	daemonservice.GenerateDaemonServiceSpec()
 
 	// Configuration Patterns
 	envvarconfiguration.GenerateEnvVarConfigurationSpec()
