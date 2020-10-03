@@ -4,6 +4,8 @@ metadata:
   name: daemon-service
 spec:
   template:
+    metadata:
+      labels: daemon-label
     spec:
       containers:
         - name: daemon-container
