@@ -5,7 +5,8 @@ metadata:
 spec:
   template:
     metadata:
-      labels: daemon-label
+      labels:
+        name: daemon-label
     spec:
       containers:
         - name: daemon-container
