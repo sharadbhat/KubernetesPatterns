@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: envar-configuration
+spec:
+  containers:
+  - name: main-container
+    image: busybox
+    env:
+    - name: VALUE_1
+      value: "This is stored in VALUE_1"
+    args:
+    - /bin/sh
+    - -c
+    - echo "Value 1: $VALUE_1"

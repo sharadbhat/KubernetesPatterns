@@ -6,6 +6,7 @@
 |:-:|
 | [Behavioral Patterns](./BehavioralPatterns/README.md) |
 | [Structural Patterns](./StructuralPatterns/README.md) |
+| [Configuration Patterns](./ConfigurationPatterns/README.md) |
 
 Based on the **Kubernetes Patterns** book by Bilgin Ibryam & Roland Huß.
 
