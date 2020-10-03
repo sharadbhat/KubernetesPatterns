@@ -3,6 +3,9 @@ kind: DaemonSet
 metadata:
   name: daemon-service
 spec:
+  selector:
+    matchLabels:
+      name: daemon-label
   template:
     metadata:
       labels:
