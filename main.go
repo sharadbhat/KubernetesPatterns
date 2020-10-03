@@ -2,6 +2,7 @@ package main
 
 import (
 	// Foundational Patterns
+	healthprobe "github.com/sharadbhat/KubernetesPatterns/FoundationalPatterns/HealthProbe"
 	managedlifecycle "github.com/sharadbhat/KubernetesPatterns/FoundationalPatterns/ManagedLifecycle"
 
 	// Behavioral Patterns
@@ -20,6 +21,7 @@ import (
 func main() {
 	// Foundational Patterns
 	managedlifecycle.GenerateManagedLifecycleSpec()
+	healthprobe.GenerateLivenessProbeSpec()
 
 	// Behavioral Patterns
 	batchjob.GenerateBatchJobSpec()
