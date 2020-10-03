@@ -12,6 +12,7 @@
 ## Usage
 
 To run, simply do
+
 ```sh
 go run main.go
 ```
