@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: daemon-service
+spec:
+  template:
+    spec:
+      containers:
+        - name: daemon-container
+          image: busybox
+          args:
+          - /bin/sh
+          - -c
+          - >
+            while true;
+            do
+              echo "Running as a Daemon service";
+              sleep 1;
+            done;
