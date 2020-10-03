@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: lifecycle-pod
+spec:
+  containers:
+  - name: lifecycle-container
+    image: busybox
+    args:
+    - /bin/sh
+    - -c
+    - >
+      while true;
+      do
+        echo "Running forever";
+        sleep 1;
+      done;
+    lifecycle:
+      postStart:
+        exec:
+          command:
+          - /bin/sh
+          - -c
+          - touch /var/log/file.txt
+      preStop:
+        exec:
+          command:
+          - /bin/sh
+          - -c
+          - rm /var/log/file.txt
