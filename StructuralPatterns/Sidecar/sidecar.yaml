@@ -22,7 +22,10 @@ spec:
       mountPath: /var/log
   - name: sidecar-container
     image: busybox
-    args: [/bin/sh, -c, 'tail -f /var/log/file.log']
+    args:
+    - /bin/sh
+    - -c
+    - tail -f /var/log/file.log
     volumeMounts:
     - name: sharedlog
       mountPath: /var/log
