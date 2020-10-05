@@ -4,6 +4,7 @@ import (
 	// Foundational Patterns
 	healthprobe "github.com/sharadbhat/KubernetesPatterns/FoundationalPatterns/HealthProbe"
 	managedlifecycle "github.com/sharadbhat/KubernetesPatterns/FoundationalPatterns/ManagedLifecycle"
+	predictabledemands "github.com/sharadbhat/KubernetesPatterns/FoundationalPatterns/PredictableDemands"
 
 	// Behavioral Patterns
 	batchjob "github.com/sharadbhat/KubernetesPatterns/BehavioralPatterns/BatchJob"
@@ -21,9 +22,10 @@ import (
 
 func main() {
 	// Foundational Patterns
-	managedlifecycle.GenerateManagedLifecycleSpec()
+	predictabledemands.GenerateResourceLimitSpec()
 	healthprobe.GenerateLivenessProbeSpec()
 	healthprobe.GenerateReadinessProbeSpec()
+	managedlifecycle.GenerateManagedLifecycleSpec()
 
 	// Behavioral Patterns
 	batchjob.GenerateBatchJobSpec()

@@ -6,5 +6,6 @@ Foundational patterns describe a number of fundamental principles that container
 
 | Patterns |
 |:-:|
+| [Predictable Demands](./PredictableDemands/README.md) |
 | [Health Probe](./HealthProbe/README.md) |
 | [Managed Lifecycle](./ManagedLifecycle/README.md) |
