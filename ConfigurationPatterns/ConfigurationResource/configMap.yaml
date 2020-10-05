@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-map-data
+data:
+  sample-value: from-config
+  sample-data: >
+    port=8080
+    root=/
