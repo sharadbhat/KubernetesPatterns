@@ -7,3 +7,4 @@ Patterns focused on customizing and adapting applications with external configur
 | Patterns |
 |:-:|
 | [EnvVar Configuration](./EnvVarConfiguration/README.md) |
+| [Configuration Resource](./ConfigurationResource/README.md) |

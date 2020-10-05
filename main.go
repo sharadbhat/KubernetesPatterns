@@ -11,6 +11,7 @@ import (
 	periodicjob "github.com/sharadbhat/KubernetesPatterns/BehavioralPatterns/PeriodicJob"
 
 	// Configuration Patterns
+	configurationresource "github.com/sharadbhat/KubernetesPatterns/ConfigurationPatterns/ConfigurationResource"
 	envvarconfiguration "github.com/sharadbhat/KubernetesPatterns/ConfigurationPatterns/EnvVarConfiguration"
 
 	// Structural Patterns
@@ -31,6 +32,8 @@ func main() {
 
 	// Configuration Patterns
 	envvarconfiguration.GenerateEnvVarConfigurationSpec()
+	configurationresource.GenerateConfigMapSpec()
+	configurationresource.GenerateSecretSpec()
 
 	// Structural Patterns
 	initcontainer.GenerateInitContainerSpec()
