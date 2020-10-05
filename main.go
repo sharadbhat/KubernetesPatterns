@@ -1,6 +1,7 @@
 package main
 
 import (
+	automatedplacement "github.com/sharadbhat/KubernetesPatterns/FoundationalPatterns/AutomatedPlacement"
 	// Foundational Patterns
 	healthprobe "github.com/sharadbhat/KubernetesPatterns/FoundationalPatterns/HealthProbe"
 	managedlifecycle "github.com/sharadbhat/KubernetesPatterns/FoundationalPatterns/ManagedLifecycle"
@@ -26,6 +27,7 @@ func main() {
 	healthprobe.GenerateLivenessProbeSpec()
 	healthprobe.GenerateReadinessProbeSpec()
 	managedlifecycle.GenerateManagedLifecycleSpec()
+	automatedplacement.GenerateNodeAffinitySpec()
 
 	// Behavioral Patterns
 	batchjob.GenerateBatchJobSpec()
