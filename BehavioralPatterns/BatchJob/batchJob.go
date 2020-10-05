@@ -11,6 +11,10 @@ import (
 // GenerateBatchJobSpec ...
 func GenerateBatchJobSpec() {
 	job := &batchv1.Job{
+		TypeMeta: metav1.TypeMeta{
+			APIVersion: "v1",
+			Kind:       "Job",
+		},
 		ObjectMeta: metav1.ObjectMeta{
 			Name: "batch-job",
 		},

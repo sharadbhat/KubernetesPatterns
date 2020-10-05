@@ -9,8 +9,11 @@ import (
 
 // GenerateSecretSpec ...
 func GenerateSecretSpec() {
-
 	secret := corev1.Secret{
+		TypeMeta: metav1.TypeMeta{
+			APIVersion: "v1",
+			Kind:       "Secret",
+		},
 		ObjectMeta: metav1.ObjectMeta{
 			Name: "secret-data",
 		},

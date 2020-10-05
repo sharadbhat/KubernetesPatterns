@@ -11,6 +11,10 @@ import (
 // GenerateDaemonServiceSpec ...
 func GenerateDaemonServiceSpec() {
 	daemonService := appsv1.DaemonSet{
+		TypeMeta: metav1.TypeMeta{
+			APIVersion: "v1",
+			Kind:       "DaemonSet",
+		},
 		ObjectMeta: metav1.ObjectMeta{
 			Name: "daemon-service",
 		},

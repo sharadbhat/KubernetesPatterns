@@ -18,6 +18,10 @@ func GeneratePeriodicJobSpec() {
 	concurrenyPolicy := batchv1beta1.ConcurrencyPolicy("Forbid")
 
 	cronJob := &batchv1beta1.CronJob{
+		TypeMeta: metav1.TypeMeta{
+			APIVersion: "v1",
+			Kind:       "CronJob",
+		},
 		ObjectMeta: metav1.ObjectMeta{
 			Name: "periodic-job",
 		},

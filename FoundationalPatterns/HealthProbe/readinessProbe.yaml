@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: health-probe
+  name: health-ready-probe
 spec:
   containers:
   - name: ready-container
