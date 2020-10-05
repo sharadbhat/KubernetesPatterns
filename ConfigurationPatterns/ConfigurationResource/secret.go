@@ -17,7 +17,7 @@ func GenerateSecretSpec() {
 		Type: corev1.SecretTypeOpaque,
 		Data: map[string][]byte{
 			"username": []byte("dGVzdA=="), // "test" in base64
-			"password": []byte("MTIzNAo="), // "1234" in base64
+			"password": []byte("MTIzNA=="), // "1234" in base64
 		},
 	}
 
